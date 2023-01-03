@@ -20,7 +20,7 @@
         <div class="uk-navbar-left">
           <a class="uk-logo" href="">
             <img
-              src="./assets/images/ninja-logo.png"
+              src="/assets/images/ninja-logo.png"
               width="64px"
               alt="logo de um ninja com chapeu amarelo de pescador"
             />
@@ -32,30 +32,23 @@
       </nav>
     </header>
     <main>
-      <h1 class="uk-heading-medium">Grid</h1>
-      <p class="uk-text-lead">
-        O sistema de grids é muito útil para alinhar os elementos e manter eles
-        flexíveis aos diversos tamanhos de tela. É possível aplicar
-        espaçamentos, combinar grids dentro de grids e com elementos flex
-        também.
-      </p>
-      <div class="uk-child-width-1-2 uk-text-center" uk-grid>
-        <div>
-          <div class="uk-card uk-card-default uk-card-body">Item</div>
+      <h1 class="uk-heading-medium">Flex</h1>
+      <p class="uk-text-lead">As propriedades do Flex mais simples.</p>
+      <div class="uk-flex-middle" uk-grid>
+        <div class="uk-width-2-3@m">
+          <p>
+            Série animada que satiriza com muito humor negro a sociedade
+            estadounidense ao apresentar situações bizarras e surreais
+            protagonizadas por Stan, Kyle, Eric e Kenny, as crianças mais
+            travessas de South Park.
+          </p>
         </div>
-        <div>
-          <div class="uk-child-width-1-2 uk-text-center" uk-grid>
-            <div>
-              <div class="uk-card uk-card-primary uk-card-body">Item</div>
-            </div>
-            <div>
-              <div class="uk-card uk-card-primary uk-card-body">Item</div>
-            </div>
-          </div>
+        <div class="uk-width-1-3@m uk-flex-first">
+          <img src="/assets/images/south_park-all-four.png" alt="Image" />
         </div>
       </div>
     </main>
-    <a class="uk-button uk-button-default uk-button-large" href="/height.html"
+    <a class="uk-button uk-button-default uk-button-large" href="./form.html"
       >Next</a
     >
   </body>
