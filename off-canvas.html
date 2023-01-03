@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.15.19/dist/css/uikit.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.19/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.19/dist/js/uikit-icons.min.js"></script>
+  </head>
+  <body class="uk-height-viewport uk-background-secondary">
+    <header>
+      <nav
+        class="uk-navbar-container uk-flex-between uk-padding-small"
+        uk-navbar
+      >
+        <div class="uk-navbar-left">
+          <a class="uk-logo" href="">
+            <img
+              src="./assets/images/ninja-logo.png"
+              width="64px"
+              alt="logo de um ninja com chapeu amarelo de pescador"
+            />
+          </a>
+        </div>
+        <div class="uk-navbar-right">
+          <h1>Demo</h1>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 class="uk-heading-medium uk-heading-bullet">Off-canvas</h1>
+      <p class="uk-text-lead">
+        Útil para aqueles menus laterais que só aparecem ao clicar em um icone.
+      </p>
+
+      <button
+        class="uk-button uk-button-default uk-margin-small-right"
+        type="button"
+        uk-toggle="target: #offcanvas-nav-primary"
+      >
+        Primary Nav
+      </button>
+
+      <button
+        class="uk-button uk-button-default"
+        type="button"
+        uk-toggle="target: #offcanvas-nav"
+      >
+        Default Nav
+      </button>
+
+      <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+          <ul
+            class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical"
+          >
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li class="uk-parent">
+              <a href="#">Parent</a>
+              <ul class="uk-nav-sub">
+                <li><a href="#">Sub item</a></li>
+                <li><a href="#">Sub item</a></li>
+              </ul>
+            </li>
+            <li class="uk-nav-header">Header</li>
+            <li>
+              <a href="#"
+                ><span
+                  class="uk-margin-small-right"
+                  uk-icon="icon: table"
+                ></span>
+                Item</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span
+                  class="uk-margin-small-right"
+                  uk-icon="icon: thumbnails"
+                ></span>
+                Item</a
+              >
+            </li>
+            <li class="uk-nav-divider"></li>
+            <li>
+              <a href="#"
+                ><span
+                  class="uk-margin-small-right"
+                  uk-icon="icon: trash"
+                ></span>
+                Item</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar">
+          <ul class="uk-nav uk-nav-default">
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li class="uk-parent">
+              <a href="#">Parent</a>
+              <ul class="uk-nav-sub">
+                <li><a href="#">Sub item</a></li>
+                <li><a href="#">Sub item</a></li>
+              </ul>
+            </li>
+            <li class="uk-nav-header">Header</li>
+            <li>
+              <a href="#"
+                ><span
+                  class="uk-margin-small-right"
+                  uk-icon="icon: table"
+                ></span>
+                Item</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span
+                  class="uk-margin-small-right"
+                  uk-icon="icon: thumbnails"
+                ></span>
+                Item</a
+              >
+            </li>
+            <li class="uk-nav-divider"></li>
+            <li>
+              <a href="#"
+                ><span
+                  class="uk-margin-small-right"
+                  uk-icon="icon: trash"
+                ></span>
+                Item</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <a class="uk-button uk-button-default uk-button-large" href="/slider.html"
+      >Next</a
+    >
+  </body>
+</html>
