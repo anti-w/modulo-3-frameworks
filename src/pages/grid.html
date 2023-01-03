@@ -13,27 +13,42 @@
   </head>
   <body class="uk-height-viewport uk-background-secondary">
     <header>
-      <nav
-        class="uk-navbar-container uk-flex-between uk-padding-small"
-        uk-navbar
-      >
+      <nav class="uk-padding-small uk-navbar-container" uk-navbar>
         <div class="uk-navbar-left">
           <a class="uk-logo" href="">
-            <img
-              src="/assets/images/ninja-logo.png"
-              width="64px"
-              alt="logo de um ninja com chapeu amarelo de pescador"
-            />
+            <img src="/assets/images/ninja-logo.png" width="64px" />
           </a>
         </div>
         <div class="uk-navbar-right">
-          <h1>Demo</h1>
+          <div class="uk-slidenav-container">
+            <a
+              href="./form.html"
+              class="uk-box-shadow-hover-large uk-border-circle uk-padding-small"
+              uk-slidenav-previous
+              uk-tooltip="Form"
+            ></a>
+            <a
+              href="./height.html"
+              class="uk-box-shadow-hover-large uk-border-circle uk-padding-small"
+              uk-slidenav-next
+              uk-tooltip="Height"
+            ></a>
+          </div>
+        </div>
+        <div class="uk-navbar-center">
+          <a class="uk-logo" href="">
+            <img src="/assets/images/uikit-logo.png" width="180px" />
+          </a>
         </div>
       </nav>
     </header>
-    <main>
-      <h1 class="uk-heading-medium">Grid</h1>
-      <p class="uk-text-lead">
+    <main class="uk-padding uk-margin-medium-top">
+      <h1
+        class="uk-heading-medium uk-text-bold uk-text-primary uk-heading-bullet"
+      >
+        Grid
+      </h1>
+      <p class="uk-text-lead uk-text-primary uk-margin-large-bottom">
         O sistema de grids é muito útil para alinhar os elementos e manter eles
         flexíveis aos diversos tamanhos de tela. É possível aplicar
         espaçamentos, combinar grids dentro de grids e com elementos flex
@@ -55,8 +70,5 @@
         </div>
       </div>
     </main>
-    <a class="uk-button uk-button-default uk-button-large" href="./height.html"
-      >Next</a
-    >
   </body>
 </html>

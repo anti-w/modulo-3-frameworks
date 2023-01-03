@@ -13,58 +13,73 @@
   </head>
   <body class="uk-height-viewport uk-background-secondary">
     <header>
-      <nav
-        class="uk-navbar-container uk-flex-between uk-padding-small"
-        uk-navbar
-      >
+      <nav class="uk-padding-small uk-navbar-container" uk-navbar>
         <div class="uk-navbar-left">
           <a class="uk-logo" href="">
-            <img
-              src="/assets/images/ninja-logo.png"
-              width="64px"
-              alt="logo de um ninja com chapeu amarelo de pescador"
-            />
+            <img src="/assets/images/ninja-logo.png" width="64px" />
           </a>
         </div>
         <div class="uk-navbar-right">
-          <h1>Demo</h1>
+          <div class="uk-slidenav-container">
+            <a
+              href="./height.html"
+              class="uk-box-shadow-hover-large uk-border-circle uk-padding-small"
+              uk-slidenav-previous
+              uk-tooltip="Height"
+            ></a>
+            <a
+              href="./margin.html"
+              class="uk-box-shadow-hover-large uk-border-circle uk-padding-small"
+              uk-slidenav-next
+              uk-tooltip="Margin"
+            ></a>
+          </div>
+        </div>
+        <div class="uk-navbar-center">
+          <a class="uk-logo" href="">
+            <img src="/assets/images/uikit-logo.png" width="180px" />
+          </a>
         </div>
       </nav>
     </header>
-    <main>
-      <h1 class="uk-heading-medium uk-heading-bullet">Lightbox</h1>
-      <p class="uk-text-lead">
+    <main class="uk-padding uk-margin-medium-top">
+      <h1
+        class="uk-heading-medium uk-text-bold uk-text-primary uk-heading-bullet"
+      >
+        Lightbox
+      </h1>
+      <p class="uk-text-lead uk-text-primary uk-margin-large-bottom">
         É um componente útil para quando queremos que um tipo de media seja
         aberta em janela, como um vídeo, mapa do google maps e outros tipos de
         medias.
       </p>
       <div uk-lightbox>
         <a
-          class="uk-button uk-button-default"
+          class="uk-button uk-button-danger"
           href="images/photo.jpg"
           data-caption="Image"
           >Image</a
         >
         <a
-          class="uk-button uk-button-default"
+          class="uk-button uk-button-danger"
           href="https://yootheme.com/site/images/media/yootheme-pro.mp4"
           data-caption="Video"
           >Video</a
         >
         <a
-          class="uk-button uk-button-default"
+          class="uk-button uk-button-danger"
           href="https://www.youtube.com/watch?v=c2pz2mlSfXA"
           data-caption="YouTube"
           >YouTube</a
         >
         <a
-          class="uk-button uk-button-default"
+          class="uk-button uk-button-danger"
           href="https://vimeo.com/1084537"
           data-caption="Vimeo"
           >Vimeo</a
         >
         <a
-          class="uk-button uk-button-default"
+          class="uk-button uk-button-danger"
           href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4740.819266853735!2d9.99008871708242!3d53.550454675412404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3f9d24afe84a0263!2sRathaus!5e0!3m2!1sde!2sde!4v1499675200938"
           data-caption="Google Maps"
           data-type="iframe"
@@ -72,8 +87,5 @@
         >
       </div>
     </main>
-    <a class="uk-button uk-button-default uk-button-large" href="./margin.html"
-      >Next</a
-    >
   </body>
 </html>

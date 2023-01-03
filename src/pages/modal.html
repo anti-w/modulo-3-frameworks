@@ -13,31 +13,46 @@
   </head>
   <body class="uk-height-viewport uk-background-secondary">
     <header>
-      <nav
-        class="uk-navbar-container uk-flex-between uk-padding-small"
-        uk-navbar
-      >
+      <nav class="uk-padding-small uk-navbar-container" uk-navbar>
         <div class="uk-navbar-left">
           <a class="uk-logo" href="">
-            <img
-              src="/assets/images/ninja-logo.png"
-              width="64px"
-              alt="logo de um ninja com chapeu amarelo de pescador"
-            />
+            <img src="/assets/images/ninja-logo.png" width="64px" />
           </a>
         </div>
         <div class="uk-navbar-right">
-          <h1>Demo</h1>
+          <div class="uk-slidenav-container">
+            <a
+              href="./margin.html"
+              class="uk-box-shadow-hover-large uk-border-circle uk-padding-small"
+              uk-slidenav-previous
+              uk-tooltip="Margin"
+            ></a>
+            <a
+              href="./notification.html"
+              class="uk-box-shadow-hover-large uk-border-circle uk-padding-small"
+              uk-slidenav-next
+              uk-tooltip="Notification"
+            ></a>
+          </div>
+        </div>
+        <div class="uk-navbar-center">
+          <a class="uk-logo" href="">
+            <img src="/assets/images/uikit-logo.png" width="180px" />
+          </a>
         </div>
       </nav>
     </header>
-    <main>
-      <h1 class="uk-heading-medium uk-heading-bullet">Modal</h1>
-      <p class="uk-text-lead">
+    <main class="uk-padding uk-margin-medium-top">
+      <h1
+        class="uk-heading-medium uk-text-bold uk-text-primary uk-heading-bullet"
+      >
+        Modal
+      </h1>
+      <p class="uk-text-lead uk-text-primary uk-margin-large-bottom">
         Componente modal criado facilmente sem que tenhamos que lidar com
         javascript.
       </p>
-      <a class="uk-button uk-button-default" href="#modal-sections" uk-toggle
+      <a class="uk-button uk-button-danger" href="#modal-sections" uk-toggle
         >Open</a
       >
 
@@ -76,10 +91,5 @@
         </div>
       </div>
     </main>
-    <a
-      class="uk-button uk-button-default uk-button-large"
-      href="./notification.html"
-      >Next</a
-    >
   </body>
 </html>
